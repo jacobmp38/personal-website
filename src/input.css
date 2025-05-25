@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-background text-primary min-h-screen font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-space-grotesk;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-primary/80 hover:text-primary relative py-2 transition-all duration-300 ease-in-out;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-primary/50 transition-all duration-300 ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-200;
+  }
+  
+  .card-title {
+    @apply text-xl font-semibold mb-3 font-space-grotesk;
+  }
+  
+  .card-date {
+    @apply text-sm text-secondary mb-3 font-inter;
+  }
+  
+  .card-content {
+    @apply text-secondary font-inter;
+  }
+} 
