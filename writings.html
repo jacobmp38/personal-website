@@ -73,7 +73,21 @@ importance of networking
     </main>
 
     <footer class="py-6 sm:py-8 text-center text-slate-500 font-['Plus_Jakarta_Sans'] mt-12 sm:mt-16 animate-fade-in">
-        <p>© 2024 Jacob Adams</p>
+        <div class="flex justify-center space-x-4 mb-6">
+            <a href="mailto:jacobmp38@gmail.com" class="social-icon text-slate-500 hover:text-indigo-600 transition-all duration-300 hover:scale-110">
+                <i class="fas fa-envelope text-xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jacob-m-p-005b69244/" target="_blank" class="social-icon text-slate-500 hover:text-indigo-600 transition-all duration-300 hover:scale-110">
+                <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/jacob_.mp/" target="_blank" class="social-icon text-slate-500 hover:text-indigo-600 transition-all duration-300 hover:scale-110">
+                <i class="fab fa-instagram text-xl"></i>
+            </a>
+            <a href="https://x.com/jacobmp38" target="_blank" class="social-icon text-slate-500 hover:text-indigo-600 transition-all duration-300 hover:scale-110">
+                <i class="fa-brands fa-x-twitter text-xl"></i>
+            </a>
+        </div>
+        <p>© 2025 Jacob Adams</p>
     </footer>
 
     <style>
@@ -88,6 +102,11 @@ importance of networking
         @keyframes fadeInUp {
             from { transform: translateY(20px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
         }
         .animate-fade-in {
             animation: fadeIn 0.8s ease-out forwards;
@@ -107,6 +126,33 @@ importance of networking
             animation: fadeInUp 0.8s ease-out 0.2s forwards;
             opacity: 0;
         }
+        .animate-fade-in-up-delay-2 {
+            animation: fadeInUp 0.8s ease-out 0.4s forwards;
+            opacity: 0;
+        }
+        .animate-fade-in-up-delay-3 {
+            animation: fadeInUp 0.8s ease-out 0.6s forwards;
+            opacity: 0;
+        }
+        .social-icon {
+            animation: float 3s ease-in-out infinite;
+            display: inline-block;
+            padding: 0.5rem;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+            background: rgba(99, 102, 241, 0.1);
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+        }
+        .social-icon:nth-child(1) { animation-delay: 0s; }
+        .social-icon:nth-child(2) { animation-delay: 0.2s; }
+        .social-icon:nth-child(3) { animation-delay: 0.4s; }
+        .social-icon:nth-child(4) { animation-delay: 0.6s; }
     </style>
 </body>
 </html> 
