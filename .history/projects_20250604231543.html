@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Jacob Adams</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 0) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+    <style>
+        nav {
+            transition: all 0.3s ease;
+        }
+        nav.scrolled {
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50 min-h-screen">
+    <nav class="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-lg border-b border-indigo-100/50 z-50 shadow-sm transform transition-all duration-300">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center items-center h-16 sm:h-20">
+                <ul class="flex space-x-8 sm:space-x-16">
+                    <li><a href="index.html" class="nav-link font-space-grotesk text-sm sm:text-base tracking-wide font-medium text-slate-700 hover:text-indigo-600 transition-all duration-300 hover:scale-110">Home</a></li>
+                    <li><a href="about.html" class="nav-link font-space-grotesk text-sm sm:text-base tracking-wide font-medium text-slate-700 hover:text-indigo-600 transition-all duration-300 hover:scale-110">About</a></li>
+                    <li><a href="projects.html" class="nav-link font-space-grotesk text-sm sm:text-base tracking-wide font-medium text-slate-700 hover:text-indigo-600 transition-all duration-300 hover:scale-110">Projects</a></li>
+                    <li><a href="writings.html" class="nav-link font-space-grotesk text-sm sm:text-base tracking-wide font-medium text-slate-700 hover:text-indigo-600 transition-all duration-300 hover:scale-110">Writings</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20 sm:pt-24">
+        <section class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="space-y-8 sm:space-y-16">
+                <div class="space-y-4 sm:space-y-6 animate-fade-in">
+                    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight font-space-grotesk text-slate-800 leading-tight animate-slide-down">Projects</h1>
+                    <p class="text-lg sm:text-xl text-slate-600 font-['Plus_Jakarta_Sans'] leading-relaxed animate-fade-in-delay">
+                        A collection of my work and solutions I've built.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+                    <div class="bg-white/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-sm border border-indigo-100/50 hover:shadow-md transition-all duration-300 group">
+                        <h3 class="text-xl sm:text-2xl font-bold font-space-grotesk text-slate-800 mb-4">ThemeConverter.com</h3>
+                        <p class="text-slate-600 font-['Plus_Jakarta_Sans'] mb-6">A tool that converts HTML websites into Shopify themes. It's a SaaS product targeting Shopify developers and store owners</p>
+                        <a href="https://themeconverter.com" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold group-hover:translate-x-1 transition-transform">
+                            Visit Project
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="bg-white/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-sm border border-indigo-100/50 hover:shadow-md transition-all duration-300 group">
+                        <h3 class="text-xl sm:text-2xl font-bold font-space-grotesk text-slate-800 mb-4">Shaperoute.com</h3>
+                        <p class="text-slate-600 font-['Plus_Jakarta_Sans'] mb-6">A crypto-powered fitness tracking platform that rewards users for their workout achievements. Combines blockchain technology with fitness tracking to create an engaging and rewarding exercise experience.</p>
+                        <a href="https://shaperoute.com" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold group-hover:translate-x-1 transition-transform">
+                            Visit Project
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="bg-white/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-sm border border-indigo-100/50 hover:shadow-md transition-all duration-300 group">
+                        <h3 class="text-xl sm:text-2xl font-bold font-space-grotesk text-slate-800 mb-4">Ethicval.com</h3>
+                        <p class="text-slate-600 font-['Plus_Jakarta_Sans'] mb-6">A comprehensive software service and digital marketing company. Providing end-to-end solutions for businesses looking to establish and grow their digital presence.</p>
+                        <a href="https://ethicval.com" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold group-hover:translate-x-1 transition-transform">
+                            Visit Project
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="bg-white/60 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-sm border border-indigo-100/50 hover:shadow-md transition-all duration-300 group">
+                        <h3 class="text-xl sm:text-2xl font-bold font-space-grotesk text-slate-800 mb-4">Ethiclabs</h3>
+                        <p class="text-slate-600 font-['Plus_Jakarta_Sans'] mb-6">A complete clinical laboratory management software. Led the development team and product management, delivering an automated platform tailored for lab workflows.</p>
+                        <a href="#" class="inline-flex items-center text-indigo-600 hover:text-indigo-700 font-semibold group-hover:translate-x-1 transition-transform">
+                            View Details
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                   
+                  
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-6 sm:py-8 text-center text-slate-500 font-['Plus_Jakarta_Sans'] mt-12 sm:mt-16 animate-fade-in">
+        <div class="flex justify-center space-x-4 mb-6">
+            <a href="mailto:jacobmp38@gmail.com" class="social-icon text-slate-500 hover:text-indigo-600 transition-all duration-300 hover:scale-110">
+                <i class="fas fa-envelope text-xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jacob-m-p-005b69244/" target="_blank" class="social-icon text-slate-500 hover:text-indigo-600 transition-all duration-300 hover:scale-110">
+                <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a href="https://www.instagram.com/jacob_.mp/" target="_blank" class="social-icon text-slate-500 hover:text-indigo-600 transition-all duration-300 hover:scale-110">
+                <i class="fab fa-instagram text-xl"></i>
+            </a>
+            <a href="https://x.com/jacobmp38" target="_blank" class="social-icon text-slate-500 hover:text-indigo-600 transition-all duration-300 hover:scale-110">
+                <i class="fa-brands fa-x-twitter text-xl"></i>
+            </a>
+        </div>
+        <p>© 2025 Jacob Adams</p>
+    </footer>
+
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideDown {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        .animate-fade-in-delay {
+            animation: fadeIn 0.8s ease-out 0.3s forwards;
+            opacity: 0;
+        }
+        .animate-slide-down {
+            animation: slideDown 0.8s ease-out forwards;
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        .animate-fade-in-up-delay-1 {
+            animation: fadeInUp 0.8s ease-out 0.2s forwards;
+            opacity: 0;
+        }
+        .animate-fade-in-up-delay-2 {
+            animation: fadeInUp 0.8s ease-out 0.4s forwards;
+            opacity: 0;
+        }
+        .animate-fade-in-up-delay-3 {
+            animation: fadeInUp 0.8s ease-out 0.6s forwards;
+            opacity: 0;
+        }
+        .social-icon {
+            animation: float 3s ease-in-out infinite;
+            display: inline-block;
+            padding: 0.5rem;
+            border-radius: 9999px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(99, 102, 241, 0.1);
+            transition: all 0.3s ease;
+        }
+        .social-icon:hover {
+            background: rgba(99, 102, 241, 0.1);
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+        }
+        .social-icon:nth-child(1) { animation-delay: 0s; }
+        .social-icon:nth-child(2) { animation-delay: 0.2s; }
+        .social-icon:nth-child(3) { animation-delay: 0.4s; }
+        .social-icon:nth-child(4) { animation-delay: 0.6s; }
+    </style>
+</body>
+</html> 
